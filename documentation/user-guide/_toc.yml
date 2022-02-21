@@ -12,11 +12,11 @@ chapters:
   - file: Command-Line-Options
   - file: Boundary-conditions
   - file: External-fields
-# - file: Python-usage
-#   sections:
-#   - file: py-boundaries
-#   - file: py-initialization
-#   - file: py-run
+- file: Python-usage
+  sections:
+  - file: py-boundaries
+  - file: py-initialization
+  - file: py-run
 - file: Saved-output
 - file: Change-log
 - file: License

@@ -13,13 +13,12 @@ mpi_num_processes = 1
 params = dict(
 	initializationSwitch = 0, # <int> an integer controlling program branch
 	GPU = -1, # <int> which gpu to use
-	phaseConstantA = 0.172, # <float> value of phase constant A
-	phaseConstantB = 2.12, # <float> value of phase constant B
+	phaseConstantA = -0.172, # <float> value of phase constant A
+	phaseConstantB = -2.12, # <float> value of phase constant B
 	phaseConstantC = 1.73, # <float> value of phase constant C
 	deltaT = 0.0005, # <float> step size for minimizer
 	fTarget = 1e-12, # <float> target minimization threshold for norm of residual forces
 	iterations = 100, # <int> maximum number of minimization steps
-	nConstants = 1, # <int> approximation for distortion term
 	randomSeed = -1, # <int> seed for reproducible random number generation
 	L1 = 4.64, # <float> value of L1 term
 	L2 = 4.64, # <float> value of L2 term
@@ -69,7 +68,7 @@ def get_runcmd(do_partition=True):
         runcmd = f'mpirun -n {mpi_num_processes} '       
     else:
         runcmd = ''
-    runcmd += '../build/openQmin.out ' + ' '.join([
+    runcmd += 'build/openQmin.out ' + ' '.join([
         f'--{key} {val}' for key, val in zip(
             params.keys(), params.values()
         )

@@ -37,6 +37,5 @@ parse:
     # including those that are enabled by default!
     - amsmath
     - dollarmath
-    - linkify
     - colon_fence
     - substitution
