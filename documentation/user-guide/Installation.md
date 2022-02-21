@@ -35,7 +35,7 @@ If you used conda to install some packages, you may need to `conda deactivate` i
 
 If installing on a Linux cluster with software "modules", you may need to do something like
 
-    module load cuda qt 
+    module load cuda qt cmake
     
 before the "basic compilation" steps above. You may also need to request an interactive session with a GPU resource; how to do so will vary from system to system.
 

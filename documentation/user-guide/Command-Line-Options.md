@@ -19,7 +19,7 @@ Two command-line flags control initialization: `-z` and `--initialConfigurationF
 * `-z -1`: Use the loadState function to load an initial configuration from a saved file. 
 <a class="anchor" id="MPI-file-naming"></a>
 :::{note}
-In order to correctly load MPI-based jobs, the file names must be in the specific format of “fileName_x$X$y$Y$z$Z$.txt”, where $X$, $Y$, and $Z$ are integers corresponding to how openQmin splits up multirank jobs (so, even if you are not using MPI, your file must be named “myFileName_x0y0z0.txt”, and you would load the file with the code `sim->loadState(“myFileName”);`. Furthermore, the format of the file must be precisely the [text format used by openQmin to save the system's state](Saved-output). 
+In order to correctly load MPI-based jobs, the file names must be in the specific format of “fileName_x$X$y$Y$z$Z$.txt”, where $X$, $Y$, and $Z$ are integers corresponding to how openQmin splits up multirank jobs. (Even if you are not using MPI, your file must be named “myFileName_x0y0z0.txt”, and you would load the file with the code `sim->loadState(“myFileName”);`.) Furthermore, the format of the file must be precisely the [text format used by openQmin to save the system's state](Saved-output). 
 :::
 :::{note}
 Using EITHER `-z -1` or `--initialConfigurationFile myfilename` will trigger this initialization path. With `-z -1` the program looks to "setIninitialConditions.h" for the initial state.

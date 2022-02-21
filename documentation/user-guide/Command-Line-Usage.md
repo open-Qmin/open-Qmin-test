@@ -1,11 +1,11 @@
-# Command-Line Usage
+# Command-line usage
 
 ## To use the GUI
 `build/openQminGUI.out`
     
 ## Running on the command line
 
-Run `build/openQmin.out` with any of the available command-line options, which are described [here](Command-Line_Options) in detail; for a brief summary you can type `build/openQmin.out --help`.
+Run `build/openQmin.out` with any of the available command-line options, which are described [here](Command-Line-Options) in detail; for a brief summary you can type `build/openQmin.out --help`.
     
 Some examples:
 * To run 100 FIRE minimization steps on a cubic lattice of side length 250:  
