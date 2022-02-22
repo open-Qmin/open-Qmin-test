@@ -154,7 +154,7 @@ Oriented anchoring conditions penalize the director's deviations from a unique d
 
 For oriented anchoring, the surface free energy density at boundary surface $\alpha$ takes the Nobili-Durand form: 
 
-$$ f_{\text{boundary}}^\alpha  = W^\alpha_{\text{ND}} \mathrm{tr} \left( (Q_{ij} - Q_{ij}^\alpha) (Q_{ij} - Q_{ij}^\alpha) \right),  $$
+$$ f_{\text{boundary}}^\alpha  = W^\alpha_{\text{ND}}  (Q_{ij} - Q_{ij}^\alpha) (Q_{ij} - Q_{ij}^\alpha),  $$
 
 where $W^\alpha_{\text{ND}} > 0$ is the anchoring strength of surface $\alpha$ and the surface-preferred Q-tensor is 
 

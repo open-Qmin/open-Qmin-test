@@ -93,3 +93,9 @@ def get_runcmd(do_partition=True):
         ]
     ])
     return runcmd
+
+def run(do_partition=True, runcmd=None):
+    if runcmd is None:
+        runcmd = get_runcmd(do_partition=do_partition)
+    os.system(runcmd)
+    
